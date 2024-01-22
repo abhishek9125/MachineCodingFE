@@ -1,0 +1,39 @@
+.progress-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.status {
+    margin-top: 10px;
+}
+
+.progress-bar {
+    position: relative;
+    height: 30px;
+    width: 800px;
+    border: 1px solid #c5c5c5;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar span{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.progress-fill {
+    background-color: #00c251;
+    height: 100%;
+    text-align: center;
+}

@@ -1,0 +1,80 @@
+.countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 48px;
+}
+
+.countdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 600px;
+}
+
+.label-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+}
+
+.label-wrapper div {
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input-wrapper input {
+    border: none;
+    font-size: 50px;
+    width: 90px;
+    height: 50px;
+    text-align: center;
+}
+
+.input-wrapper span {
+    font-size: 50px;
+    margin-top: -10px;
+}
+
+.input-wrapper input::-webkit-outer-spin-button,
+.input-wrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button {
+    color: white;
+    padding: 10px 30px;
+    width: 39%;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.start {
+    background-color: green;
+}
+
+.reset {
+    background-color: orangered;
+}

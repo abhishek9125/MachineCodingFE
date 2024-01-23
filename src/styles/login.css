@@ -1,0 +1,30 @@
+.login-wrapper {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 52px;
+    text-align: center;
+}
+
+.otp-wrapper {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.otp-wrapper input {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;   
+}
+
+.otp-input {
+    font-size: 32px;
+    padding-left: 20px;
+}

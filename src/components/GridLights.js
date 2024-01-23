@@ -23,32 +23,32 @@ function GridLights() {
         [1, 0, 1],
         [1, 1, 1],
     ];
-    
+
     const deactivateCells = () => {
         setIsDeactivating(true);
         const timer = setInterval(() => {
-          setOrder((origOrder) => {
-            const newOrder = [...origOrder];
-            newOrder.pop();
-    
-            if (newOrder.length === 0) {
-              clearInterval(timer);
-              setIsDeactivating(false);
-            }
-    
-            return newOrder;
-          });
+            setOrder((origOrder) => {
+                const newOrder = [...origOrder];
+                newOrder.pop();
+
+                if (newOrder.length === 0) {
+                    clearInterval(timer);
+                    setIsDeactivating(false);
+                }
+
+                return newOrder;
+            });
         }, 300);
-      };
-    
-      const activateCells = (index) => {
+    };
+
+    const activateCells = (index) => {
         const newOrder = [...order, index];
         setOrder(newOrder);
         if (newOrder.length === config.flat(1).filter(Boolean).length) {
-          deactivateCells();
+            deactivateCells();
         }
-      };
-    
+    };
+
 
     return (
         <div className="wrapper">

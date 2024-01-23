@@ -1,0 +1,26 @@
+.head-container {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+  
+.tab-item {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+  
+.tab-item.active {
+    background-color: brown;
+}
+  
+.content-container {
+    background-color: grey;
+    margin: 0;
+    padding: 10px;
+}
+  

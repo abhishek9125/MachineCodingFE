@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Countdown from './components/Countdown';
+import GridLights from './components/GridLights';
 import LoginForm from './components/LoginForm';
 import Pagination from './components/Pagination';
 import Progress from './components/Progress';
@@ -19,6 +20,7 @@ function App() {
 					<Route path="/countdown" element={<Countdown />}  />
 					<Route path="/search" element={<Search />}  />
 					<Route path="/login" element={<LoginForm />}  />
+					<Route path="/grid" element={<GridLights />}  />
 				</Routes>
 			</div>
 		</BrowserRouter>

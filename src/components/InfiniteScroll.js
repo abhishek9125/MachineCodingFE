@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback } from 'react'
+import React, { useState, useRef } from 'react'
 import useScrollData from '../hooks/useScrollData';
 
 function InfiniteScroll() {
@@ -10,7 +10,7 @@ function InfiniteScroll() {
 
     const { loading, error, books } = useScrollData(query, pageNumber);
 
-    const lastBookElementRef = useCallback((node) => {
+    const lastBookElementRef = (node) => {
         if(loading) return;
 
         if(observer.current) observer.current.disconnect();
@@ -23,7 +23,7 @@ function InfiniteScroll() {
 
         if(node) observer.current.observe(node);
 
-    }, [loading])
+    }
 
     
     const handleChange = (e) => {

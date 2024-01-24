@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Countdown from './components/Countdown';
 import CustomMemo from './components/CustomMemo';
+import CustomUseEffect from './components/CustomUseEffect';
 import Dimensions from './components/Dimensions';
 import GridLights from './components/GridLights';
 import InfiniteScroll from './components/InfiniteScroll';
@@ -29,6 +30,7 @@ function App() {
 					<Route path="/dimensions" element={<Dimensions />}  />
 					<Route path="/menu" element={<Menu />}  />
 					<Route path="/memo" element={<CustomMemo />}  />
+					<Route path="/effect" element={<CustomUseEffect />}  />
 				</Routes>
 			</div>
 		</BrowserRouter>

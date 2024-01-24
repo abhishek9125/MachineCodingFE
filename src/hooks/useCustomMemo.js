@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 
 const isEqual = (prevDeps, newDeps) => {
 
@@ -24,6 +24,12 @@ const useCustomMemo = (cb, deps) => {
             deps
         }
     }
+
+    useEffect(() => {
+        return () => {
+            cache.current = null;
+        }
+    }, [])
 
     return cache.current.value;
     
